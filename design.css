@@ -1,0 +1,706 @@
+/* =========================
+   GLOBAL SETTINGS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    background: linear-gradient(
+        135deg,
+        #eaf4ff,
+        #f8fbff
+    );
+
+    color: #333;
+
+    padding-bottom: 40px;
+
+}
+
+
+
+
+/* =========================
+   NAVIGATION BAR
+========================= */
+
+
+nav {
+
+    width: 90%;
+
+    margin: 20px auto;
+
+    background: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 18px 40px;
+
+    border-radius: 50px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+
+    position: sticky;
+
+    top: 20px;
+
+    z-index: 1000;
+
+}
+
+
+
+.logo {
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    color: #0066ff;
+
+}
+
+
+
+nav ul {
+
+    display: flex;
+
+    list-style: none;
+
+    gap: 25px;
+
+}
+
+
+
+nav ul li a {
+
+    text-decoration: none;
+
+    color: #333;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+
+
+nav ul li a:hover {
+
+    color:#0066ff;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+
+.cv-container {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    background:white;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    box-shadow:
+
+    0 20px 50px rgba(0,0,0,0.15);
+
+}
+
+
+
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+
+header {
+
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #003366,
+        #007bff
+    );
+
+
+    color:white;
+
+    text-align:center;
+
+    padding:60px 40px;
+
+
+}
+
+
+
+.profile-picture {
+
+
+    width:170px;
+
+    height:170px;
+
+
+    object-fit:cover;
+
+
+    border-radius:50%;
+
+
+    border:6px solid white;
+
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.4);
+
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+
+header h1 {
+
+
+    font-size:45px;
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+header h2 {
+
+
+    font-size:22px;
+
+    font-weight:400;
+
+    color:#dbeafe;
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+header p {
+
+    color:white;
+
+    max-width:650px;
+
+    margin:auto;
+
+    line-height:1.7;
+
+}
+
+
+
+
+
+/* BUTTONS */
+
+
+.buttons {
+
+    margin:30px 0;
+
+}
+
+
+
+.btn {
+
+
+    display:inline-block;
+
+    padding:12px 30px;
+
+    margin:10px;
+
+
+    border-radius:30px;
+
+
+    background:white;
+
+
+    color:#0066ff;
+
+
+    text-decoration:none;
+
+
+    font-weight:bold;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.btn:hover {
+
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+
+
+}
+
+
+
+
+.btn2 {
+
+
+    background:#00c6ff;
+
+    color:white;
+
+}
+
+
+
+
+/* CONTACT */
+
+
+.contact {
+
+
+    margin-top:25px;
+
+    line-height:2;
+
+}
+
+
+
+
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+
+section {
+
+
+    padding:45px 60px;
+
+}
+
+
+
+section h3 {
+
+
+    font-size:30px;
+
+    color:#0066ff;
+
+
+    margin-bottom:25px;
+
+
+    border-left:6px solid #0066ff;
+
+    padding-left:15px;
+
+
+}
+
+
+
+section p {
+
+    line-height:1.8;
+
+    color:#555;
+
+}
+
+
+
+
+
+/* =========================
+   CARDS
+========================= */
+
+
+.box,
+.experience,
+.skill {
+
+
+    background:#f8fbff;
+
+
+    padding:25px;
+
+
+    margin-bottom:20px;
+
+
+    border-radius:15px;
+
+
+    border-left:5px solid #0066ff;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+.box:hover,
+.experience:hover,
+.skill:hover {
+
+
+    transform:translateY(-8px);
+
+
+    box-shadow:
+
+    0 15px 30px rgba(0,0,0,.12);
+
+
+}
+
+
+
+
+.box h4,
+.experience h4,
+.skill h4 {
+
+
+    color:#0056b3;
+
+    font-size:20px;
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+
+
+
+/* =========================
+ EXPERIENCE
+========================= */
+
+
+.experience span {
+
+
+    color:#777;
+
+    font-size:14px;
+
+
+}
+
+
+
+ul {
+
+
+    margin-top:15px;
+
+    padding-left:25px;
+
+
+}
+
+
+
+li {
+
+
+    margin-bottom:10px;
+
+    line-height:1.6;
+
+
+}
+
+
+
+
+
+
+/* =========================
+ SKILLS
+========================= */
+
+
+.skills {
+
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(2,1fr);
+
+
+    gap:25px;
+
+
+}
+
+
+
+.skill {
+
+
+    border-top:5px solid #00aaff;
+
+    border-left:none;
+
+
+}
+
+
+
+.skill p {
+
+
+    color:#555;
+
+
+}
+
+
+
+
+
+
+/* =========================
+ CONTACT
+========================= */
+
+
+strong {
+
+
+    color:#0066ff;
+
+
+}
+
+
+
+
+
+
+/* =========================
+ FOOTER ANIMATION EFFECTS
+========================= */
+
+
+section {
+
+    animation:
+
+    fadeIn .8s ease;
+
+
+}
+
+
+
+@keyframes fadeIn {
+
+
+from {
+
+opacity:0;
+
+transform:translateY(20px);
+
+}
+
+
+to {
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+ MOBILE RESPONSIVE
+========================= */
+
+
+@media(max-width:768px){
+
+
+body {
+
+padding:10px;
+
+}
+
+
+
+nav {
+
+
+width:100%;
+
+border-radius:20px;
+
+padding:20px;
+
+flex-direction:column;
+
+
+}
+
+
+
+nav ul {
+
+
+margin-top:15px;
+
+flex-direction:column;
+
+text-align:center;
+
+gap:15px;
+
+
+}
+
+
+
+
+header h1 {
+
+
+font-size:32px;
+
+
+}
+
+
+
+header h2 {
+
+
+font-size:18px;
+
+
+}
+
+
+
+section {
+
+
+padding:30px 25px;
+
+
+}
+
+
+
+.skills {
+
+
+grid-template-columns:1fr;
+
+
+}
+
+
+
+.profile-picture {
+
+
+width:130px;
+
+height:130px;
+
+
+}
+
+
+
+}
